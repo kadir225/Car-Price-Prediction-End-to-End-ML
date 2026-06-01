@@ -1,11 +1,1 @@
-# Recap
-
-`cars` dataset’i üzerinde şunları yapacağız:
-
-- Feature’ları preprocess etmek
-- Bir modeli değerlendirmek ve eğitmek
-- Yeni bir aracın fiyatını tahmin etmek
-
-Recap’e başlamak için `jupyter notebook` içinde `Recap - The Cars Dataset.ipynb` dosyasını açın.
-
-🚀 Sıra sizde!
+Cars Dataset ile Uçtan Uca Makine Öğrenmesi: Fiyat Tahmin ModeliBu projede, otomotiv sektörüne ait bir araç veri seti (cars dataset) üzerinde ham verinin alınmasından canlı tahmine kadar uzanan uçtan uca (end-to-end) bir makine öğrenmesi akışı gerçekleştirdim. Proje kapsamında verileri model beslemesine uygun hale getirmek için gelişmiş veri ön işleme (preprocessing) teknikleri uyguladım, regresyon modelimi eğittim ve sisteme girilen yeni bir aracın fiyatını tahmin eden kararlı bir yapı kurdum.🔍 Gerçekleştirdiğim Analiz ve Modelleme Adımları1. Veri Keşfi ve Özellik Ön İşleme (Feature Preprocessing)Analiz, modelleme ve test süreçlerimi esnek bir şekilde yönetebilmek adına çalışmalarımı The Cars Dataset.ipynb dosyası üzerinden yürüttüm.Veri setindeki eksik verileri, aykırı değerleri (outliers) ve değişken yapılarını detaylıca inceledim.Kategorik değişkenleri (marka, vites tipi, yakıt türü vb.) sayısal formata dönüştürmek için One-Hot Encoding veya Label Encoding yöntemlerini uyguladım. Sayısal değişkenleri (kilometre, motor gücü, yaş vb.) ise modelin daha dengeli öğrenmesi adına ölçeklendirerek (Scaling) veri setini model eğitimine hazır hale getirdim.2. Model Eğitimi ve Performans DeğerlendirmeHazırladığım temiz veri setini eğitim (train) ve test setlerine ayırdım.Araç fiyat tahmini bir regresyon problemi olduğu için amaca uygun regresyon algoritmalarını (örneğin Linear Regression, Random Forest Regressor veya Gradient Boosting) seçerek modeli eğittim.Modelin tahmin başarısını ölçmek amacıyla $R^2$ Skoru (Açıklayıcılık Katsayısı) ve RMSE (Kök Ortalama Kare Hata) gibi sektörel regresyon metriklerini kullanarak model performansını titizlikle değerlendirdim.3. Canlı Tahmin (Inference) ve Yeni Araç FiyatlamasıModel eğitimini ve performans optimizasyonunu tamamladıktan sonra, sistemin gerçek hayatta nasıl çalışacağını simüle ettim.Veri setinde daha önce hiç yer almayan, özellikleri (yaşı, kilometresi, beygir gücü vb.) tarafımdan belirlenmiş yeni bir aracın verilerini eğitilmiş modele girdi olarak besledim.Modelin bu yeni araç özellikleri karşısında başarılı ve gerçeğe yakın bir piyasa fiyat tahmini üretmesini sağladım.
